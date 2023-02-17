@@ -1,0 +1,139 @@
+:root {
+    --clr-neutral-900: hsl(0,0,0);
+    --clr-neutral-700: hsl(229, 25%, 31%);
+    --clr-neutral-500: hsl(229, 64%, 46%);
+    --clr-neutral-400: hsl(217, 16%, 45%);
+}
+
+*,
+*::before,
+*::after { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+}
+
+h1 {
+    width: min-content;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(255,100%,100%);
+    text-transform: uppercase;
+    line-height: 0.75;
+}
+
+button {
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+header .container {
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 0.75rem;
+    padding: 11px;
+    margin-block: 30px;
+}
+
+header {
+    margin-inline: 30px;
+    margin-bottom: 103px;
+}
+
+.score {
+    width: 83px;
+    background-color: hsl(255, 100%, 100%);
+    padding-block: 12px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.score-title {
+    font-size: 12px;
+    color: hsl(229, 64%, 46%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.player-score,
+.computer-score {
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(229, 25%, 31%);
+}
+
+.options .container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 40px; */
+}
+
+.options {
+    margin-bottom: 60px;
+    /* margin-inline: 30px; */
+}
+
+.container {
+    margin-inline: auto;
+    max-width: 700px;
+}
+
+.btn {
+    border-radius: 50%;
+}
+
+.btn img {
+    pointer-events: none;
+    padding: 25px;
+}
+
+.rock {
+    border: 16px solid hsl(349, 71%, 52%);
+    /* to hsl(349, 70%, 56%); */
+}
+
+.paper {
+    border: 15px solid hsl(230, 89%, 62%);
+    /* hsl(230, 89%, 65%); gradient border do zrobienia */
+}
+
+.paper img,
+.scissors img {
+    padding: 21.5px 25.5px;
+}
+
+.scissors {
+    border: 15px solid hsl(39, 89%, 49%);
+}
+
+.scores {
+    display: flex;
+    gap: 15px;
+}
+
+.results {
+    text-align: center;
+}
+
+.results p {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: hsl(255, 100%, 100%);
+}

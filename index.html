@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="src/style/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <div class="scores">
+                <div class="score">
+                    <p class="score-title">player</p>
+                    <span class="player-score">0</span>
+                </div>
+                <div class="score">
+                    <p class="score-title comp">comp</p>
+                    <span class="computer-score">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="options">
+            <div class="container">
+                <button data-option="rock" class="btn rock">
+                    <img src="/src/images/icon-rock.svg" alt="rock">
+                </button> 
+                <button data-option="paper" class="btn paper">
+                    <img src="/src/images/icon-paper.svg" alt="paper">
+                </button>
+                <button data-option="scissors" class="btn scissors">
+                    <img src="/src/images/icon-scissors.svg" alt="scissors">
+                </button>
+            </div>
+        </section>
+        <section class="results">
+            <div class="container">
+                <p class="player-choice"></p>
+                <p class="computer-choice"></p>
+                <p class="round-result">You won</p>
+            </div>
+        </section>
+    </main>
+    <script src="src/js/main.js" defer></script>
+</body>
+</html>
